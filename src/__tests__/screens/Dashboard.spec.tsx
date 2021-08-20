@@ -58,6 +58,8 @@ describe("Dashboard", () => {
     const textInput = getByPlaceholderText("Digite aqui 'usuário/repositório'");
     const submitButton = getByTestId("input-button");
 
+    expect(submitButton).toBeDisabled();
+
     fireEvent.changeText(textInput, "repository-name");
 
     expect(submitButton).not.toBeDisabled();
