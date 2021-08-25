@@ -19,7 +19,7 @@ import {
 } from "./styles";
 
 export function Dashboard() {
-  const [inputText, setInputText] = useState("tes");
+  const [inputText, setInputText] = useState("");
   const inputRef = useRef<TextInput>(null);
 
   const { navigate } = useNavigation();
